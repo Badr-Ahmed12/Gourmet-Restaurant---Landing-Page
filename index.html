@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gourmet Restaurant - Landing Page</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+  <!-- Navbar -->
+  <header class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto flex items-center justify-between py-4 px-6">
+      <h1 class="text-2xl font-bold text-red-600">Gourmet Restaurant</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#about" class="hover:text-red-600 transition-all">About</a></li>
+          <li><a href="#menu" class="hover:text-red-600 transition-all">Menu</a></li>
+          <li><a href="#team" class="hover:text-red-600 transition-all">Our Team</a></li>
+          <li><a href="#testimonials" class="hover:text-red-600 transition-all">Testimonials</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative h-screen bg-gradient-to-r from-red-600 to-orange-500 flex items-center justify-center">
+    <div id="three-container" class="absolute top-0 left-0 w-full h-full"></div>
+    <div class="z-10 text-center text-white">
+      <h1 class="text-6xl sm:text-7xl font-bold">Welcome to Gourmet Restaurant</h1>
+      <p class="mt-4 text-lg sm:text-2xl">Where taste meets the art of food</p>
+      <button class="mt-6 px-8 py-4 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-all transform hover:scale-105">
+      <a href="#menu">Explore Menu </a>
+      </button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-gray-50 text-center">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold text-gray-900 mb-6">About Us</h2>
+      <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+        At Gourmet Restaurant, we are passionate about providing an unforgettable dining experience. From locally-sourced ingredients to creative culinary techniques, every dish is a masterpiece. Our chefs are inspired by the beauty of culinary art and use the finest ingredients to create a symphony of flavors.
+      </p>
+    </div>
+  </section>
+
+  <!-- Swiper Section (Testimonials) -->
+  <section id="testimonials" class="py-16 bg-white">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold text-gray-900 mb-6">What Our Customers Say</h2>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Testimonial 1 -->
+          <div class="swiper-slide bg-gray-100 p-8 rounded-lg shadow-lg">
+            <p class="text-lg text-gray-700 mb-4">"The best dining experience I've ever had! The food was exceptional, and the atmosphere was perfect. Highly recommend!"</p>
+            <p class="text-md font-bold text-gray-800">Sarah J.</p>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="swiper-slide bg-gray-100 p-8 rounded-lg shadow-lg">
+            <p class="text-lg text-gray-700 mb-4">"A delightful experience from start to finish. The chefs truly know how to balance flavors. Can't wait to return!"</p>
+            <p class="text-md font-bold text-gray-800">Michael T.</p>
+          </div>
+          <!-- Testimonial 3 -->
+          <div class="swiper-slide bg-gray-100 p-8 rounded-lg shadow-lg">
+            <p class="text-lg text-gray-700 mb-4">"Every bite was delicious! The menu is creative, and the service was top-notch. Will definitely be coming back!"</p>
+            <p class="text-md font-bold text-gray-800">Emily L.</p>
+          </div>
+        </div>
+        <!-- Swiper Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="py-16 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold text-gray-900 mb-6">Our Menu</h2>
+      <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-12">
+        Discover our curated menu, featuring exquisite dishes that combine taste and creativity.
+      </p>
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition-all transform hover:scale-105">
+          <h3 class="text-xl font-bold text-gray-900">Appetizers</h3>
+          <ul class="mt-4 text-gray-700 list-disc list-inside">
+            <li>Fresh Bruschetta</li>
+            <li>Stuffed Mushrooms</li>
+            <li>Classic Caesar Salad</li>
+          </ul>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition-all transform hover:scale-105">
+          <h3 class="text-xl font-bold text-gray-900">Main Courses</h3>
+          <ul class="mt-4 text-gray-700 list-disc list-inside">
+            <li>Grilled Salmon with Herbs</li>
+            <li>Beef Tenderloin with Red Wine Sauce</li>
+            <li>Vegetarian Risotto</li>
+          </ul>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition-all transform hover:scale-105">
+          <h3 class="text-xl font-bold text-gray-900">Desserts</h3>
+          <ul class="mt-4 text-gray-700 list-disc list-inside">
+            <li>Chocolate Lava Cake</li>
+            <li>Classic Tiramisu</li>
+            <li>Fruit Tart with Cream</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Gourmet Restaurant. All rights reserved.</p>
+      <div class="space-x-6 mt-4">
+        <a href="#" class="text-gray-400 hover:text-red-600">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="text-gray-400 hover:text-red-600">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="text-gray-400 hover:text-red-600">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="text-gray-400 hover:text-red-600">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
